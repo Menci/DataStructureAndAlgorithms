@@ -152,13 +152,13 @@ public:
         return NodeProxy(minNode, this);
     }
 
-	size_t size() const {
-		return n;
-	}
+    size_t size() const {
+        return n;
+    }
 
     bool empty() const {
-		return n == 0;
-	}
+        return n == 0;
+    }
 
     static FibonacciHeap<TKey, Compare> merge(FibonacciHeap<TKey, Compare> &&heap1, FibonacciHeap<TKey, Compare> &&heap2) {
         FibonacciHeap<TKey, Compare> newHeap;
